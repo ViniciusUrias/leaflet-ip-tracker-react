@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+html{
+  font-family: 'Rubik', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.leaflet-container{
+    margin-top: 0;
+    height: 599px;
+    width: 100%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .top{
+    width: 100vw;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
   }
-  to {
-    transform: rotate(360deg);
+
+  .top>img{
+    width:100%
   }
-}
+
+ 
+
+  .button{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    margin-bottom: 80px;
+    position: relative;
+  }
+
+  .title{
+    top: 30px;
+    left: 780px;
+    position: absolute;
+    color: #FFF;
+  }
+
+  .input{
+    text-align: center;
+    position: absolute;
+    top: 120px;
+    left: 600px;
+    display: flex;
+  }
+
+  .input>input{
+    width: 600px;
+    height: 50px;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 20px;
+    padding-left: 20px;
+    border: none;
+    outline: none;
+    font-family: 'Rubik', sans-serif;
+    
+  }
+    ::placeholder{
+      font-size: 20px;
+    }
+    
+    .go{
+    height: 52px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 31px;
+    align-content: center;
+    }
+  
+    .cards{
+      display: flex;
+      width: 1440px;
+      height: 200px;
+      background-color: white;
+      border-radius: 15px;
+      justify-content: space-evenly;
+      position: absolute;
+      top: 250px;
+      z-index: 99999;
+      margin-left: 12%;
+      font-family: 'Rubik', sans-serif;
+    }
+    .cards_child{
+      align-items: center;
+      margin-top: 40px;
+      height: 20px;
+      word-wrap: break-word;
+      font-family: 'Rubik', sans-serif;
+      
+      
+    }
+    .cards_child>h1{
+      margin-top: 0;
+      width: 99%;
+      border: 1px solid transparent;
+      font-family: 'Rubik', sans-serif;
+    }
+   
+
+    .divider{
+      height: 80px;
+      width: 3px;
+      border-right: 1px solid purple;
+      margin-top: 60px;
+    }
